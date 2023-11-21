@@ -9,8 +9,9 @@ static const char *fonts[]          = { "IntelOne Mono:size=12" };
 static const char dmenufont[]       = "IntelOne Mono:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee"; // font color
+//static const char col_gray3[]       = "#bbbbbb"; // right? font color?
+static const char col_gray3[]       = "#ffffff"; // right? font color?
+static const char col_gray4[]       = "#eeeeee"; // left? font color
 static const char col_cyan[]        = "#005577"; // the top color
 //static const char col_cyan[]        = "#f7860e";
 static const char *colors[][3]      = {
