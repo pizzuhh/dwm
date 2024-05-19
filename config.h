@@ -69,7 +69,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 static char dmenumon[2] = "0";
 /* commands */
-static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenumon, dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 //static const char *termcmd[] = {"qterminal", NULL};
 static const char *flamecmd[] = {"flameshot", "gui", NULL};
@@ -78,10 +78,10 @@ static const char *powercmd[] = {"power", NULL};
 static const Key keys[] = {
 
 	/* modifier                     key        function        argument */
-	{MODKEY,			XK_s,	   spawn,	   {.v = flamecmd}},
+	{MODKEY,			                  XK_s,	     spawn,	         {.v = flamecmd}},
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,             		XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY,			XK_o,	   spawn,	   {.v = powercmd} },
+	{ MODKEY,             		      XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,			                  XK_o,	     spawn,	         {.v = powercmd} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
