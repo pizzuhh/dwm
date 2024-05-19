@@ -7,7 +7,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 //static const char *fonts[]          = { "IntelOne Mono:size=12" };
 static const char *fonts[]          = { "Kodemono:size=12" };
-static const char dmenufont[]       = "IntelOne Mono:size=12";
+static const char dmenufont[]       = "Kode mono:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 //static const char col_gray3[]       = "#bbbbbb"; // right? font color?
